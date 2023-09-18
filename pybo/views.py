@@ -8,6 +8,7 @@ from pybo.models import Question
 
 
 def index(request):
+    # print("asdfasdf")
     page = request.GET.get('page', '1')
     question_list = Question.objects.order_by('-create_date')
 
