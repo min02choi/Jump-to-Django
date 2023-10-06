@@ -19,6 +19,8 @@ def index(request):
     context = {'question_list': page_obj}
     return render(request, 'pybo/question_list.html', context)
 
+def index2(request):
+    return render(request, 'social_login/sociallogin_test.html')
 
 def detail(request, question_id):
     # question = Question.objects.get(id=question_id)
